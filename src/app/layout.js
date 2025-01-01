@@ -36,6 +36,10 @@ export default function RootLayout({ children }) {
       >
         <FormProvider>
           <ReactQueryProvider>
+            <div className="bg-white backdrop-blur-lg border-b border-gray-200 z-50">
+              <div className="h-1 bg-gradient-to-r from-primary via-accent to-primary"></div>
+              <Header />
+            </div>
             <div className="fixed inset-0 overflow-hidden pointer-events-none">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"></div>
               <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-conic from-primary/10 via-accent/5 to-transparent"></div>
